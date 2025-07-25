@@ -53,7 +53,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
             >
               <Thermometer size={16} className="text-[#f35a57]" />
-              <span className="text-black font-medium">
+              <span className="text-white font-medium">
                 Solutions de confort thermique
               </span>
             </motion.div>
@@ -62,7 +62,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6 leading-tight max-w-4xl mx-auto"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
             >
               Experts en{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[red] to-[blue]">
@@ -75,7 +75,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
-              className="text-lg md:text-xl text-gray-800 mb-10 max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto"
             >
               Améliorez votre confort toute l'année avec nos solutions sur
               mesure
@@ -91,7 +91,7 @@ const Hero = () => {
                 to="/contact"
                 className="px-8 py-4 rounded-xl bg-gradient-to-r from-[red] to-[blue] text-white font-medium hover:shadow-lg hover:shadow-[#f35a57]/30 transition-all duration-300 flex items-center justify-center gap-2 group"
               >
-                Demander un devis
+                Contacter-nous
                 <ArrowRight
                   size={18}
                   className="group-hover:translate-x-1 transition-transform duration-300"
@@ -99,7 +99,7 @@ const Hero = () => {
               </Link>
               <Link
                 to="/services"
-                className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md border border-black text-black font-medium hover:bg-white/20 transition-all duration-300"
+                className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md border border-white text-white font-medium hover:bg-white/20 transition-all duration-300"
               >
                 Découvrir nos services
               </Link>

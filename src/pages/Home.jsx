@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
       <div className="mb-10">
-        {/* Hero Section with Video Background */}
         <Hero />
 
         <div className="w-full md:w-10/12 mx-auto">
