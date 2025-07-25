@@ -37,7 +37,9 @@ const App = () => {
       console.error("Error setting language:", error);
       dispatch(setLangue(0));
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 100);
     }
   }, [dispatch]);
 
@@ -62,7 +64,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<Notfound />} />
