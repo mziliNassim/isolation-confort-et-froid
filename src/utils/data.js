@@ -2,23 +2,15 @@ import usa from "../assets/img/languages/usa.png";
 import france from "../assets/img/languages/france.png";
 import morocco from "../assets/img/languages/morocco.png";
 
-import {
-  Instagram,
-  Facebook,
-  MessageCircleMore,
-  Linkedin,
-  Wind,
-  Shield,
-} from "lucide-react";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { ArrowRight, Wrench, ShieldCheck } from "lucide-react";
-import { Thermometer, Snowflake } from "lucide-react";
+import { Instagram, Facebook, Wind, Shield } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Wrench } from "lucide-react";
+import { Thermometer, Snowflake, MessageCircleMore } from "lucide-react";
 
 export const navigation = [
   { id: 1, title: "accueil", url: "/home" },
-  // { id: 2, title: "à propos", url: "/about" },
-  { id: 3, title: "nos services", url: "/services" },
-  { id: 5, title: "Contact", url: "/contact" },
+  { id: 2, title: "à propos", url: "/about" },
+  // { id: 3, title: "nos services", url: "/services" },
+  // { id: 5, title: "Contact", url: "/contact" },
 ];
 
 export const languages = [

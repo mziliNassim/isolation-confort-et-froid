@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
+      <div className="grid lg:grid-cols-2 gap-16 items-start my-24">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -14,7 +14,7 @@ const Hero = () => {
         >
           <div className="space-y-4">
             <p className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
-              DELTATECH
+              ICF - Isolation Confort & Froid
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-black leading-tight">
               Une Équipe Passionnée
@@ -23,11 +23,25 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-600 text-lg leading-relaxed">
-            Chez Deltatech, nous sommes fiers de mettre notre expertise au
-            service de vos projets. Notre équipe de passionnés travaille chaque
-            jour pour vous offrir les meilleures prestations en installation et
-            maintenance, partout au Maroc.
+            Chez ICF, nous mettons notre savoir-faire à votre disposition pour
+            répondre à tous vos besoins en matière de :
           </p>
+
+          <ul className="list-disc pl-5 text-gray-700 text-base space-y-2">
+            <li>
+              <strong>Isolation Thermique</strong> de haute performance pour un
+              meilleur confort et des économies d’énergie.
+            </li>
+            <li>
+              <strong>Climatisation</strong> (installation, réparation et
+              entretien) avec des solutions sur mesure pour chaque espace.
+            </li>
+            <li>
+              <strong>Installation et réparation</strong> de tous types
+              d’équipements thermiques et frigorifiques, avec expertise et
+              précision.
+            </li>
+          </ul>
         </motion.div>
 
         {/* Right Images Grid with Stats */}
@@ -38,14 +52,14 @@ const Hero = () => {
           className="relative"
         >
           <div className="grid grid-cols-2 gap-4 mb-8">
-            {/* Large image placeholder */}
+            {/* Large image */}
             <div className="col-span-1 row-span-2">
               <div className="bg-gray-200 h-80 rounded-2xl relative overflow-hidden">
                 <img
                   src="/images/3.jpg"
-                  alt="About Image 1"
+                  alt="Travaux d'installation"
                   loading="lazy"
-                  className="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-500 object-cover w-full h-full "
+                  className="absolute inset-0 object-cover w-full h-full"
                 />
               </div>
             </div>
@@ -55,17 +69,17 @@ const Hero = () => {
               <div className="bg-gray-300 h-36 rounded-2xl relative overflow-hidden">
                 <img
                   src="/images/3.jpg"
-                  alt="About Image 1"
+                  alt="Travaux de maintenance"
                   loading="lazy"
-                  className="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-500 object-cover w-full h-full "
+                  className="absolute inset-0 object-cover w-full h-full"
                 />
               </div>
               <div className="bg-gray-300 h-36 rounded-2xl relative overflow-hidden">
                 <img
                   src="/images/3.jpg"
-                  alt="About Image 1"
+                  alt="Équipe ICF"
                   loading="lazy"
-                  className="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-500 object-cover w-full h-full "
+                  className="absolute inset-0 object-cover w-full h-full"
                 />
               </div>
             </div>
