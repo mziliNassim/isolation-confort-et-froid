@@ -1,0 +1,202 @@
+import usa from "../assets/img/languages/usa.png";
+import france from "../assets/img/languages/france.png";
+import morocco from "../assets/img/languages/morocco.png";
+
+import {
+  Instagram,
+  Facebook,
+  MessageCircleMore,
+  Linkedin,
+  Wind,
+  Shield,
+} from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { ArrowRight, Wrench, ShieldCheck } from "lucide-react";
+import { Thermometer, Snowflake } from "lucide-react";
+
+export const navigation = [
+  { id: 1, title: "accueil", url: "/home" },
+  { id: 2, title: "à propos", url: "/about" },
+  { id: 3, title: "nos services", url: "/services" },
+  { id: 5, title: "Contact", url: "/contact" },
+];
+
+export const languages = [
+  {
+    id: 1,
+    title: "English (US)",
+    icon: usa,
+  },
+  {
+    id: 2,
+    title: "French (Fr)",
+    icon: france,
+  },
+  {
+    id: 3,
+    title: "Arabic (Ar)",
+    icon: morocco,
+  },
+];
+
+// Social media links
+export const socialLinks = [
+  {
+    icon: Facebook,
+    name: "Facebook",
+    link: "https://www.facebook.com/mzilinassim/",
+    color: "#3b5998",
+  },
+  {
+    icon: Instagram,
+    name: "Instagram",
+    link: "https://instagram.com/nassim__dev",
+    color: "#E1306C",
+  },
+  {
+    icon: Mail,
+    name: "mail",
+    link: "mailto:mzilinassim@gmail.com",
+    color: "#EA4335",
+  },
+  {
+    icon: MessageCircleMore,
+    name: "Whatsapp",
+    link: "https://wa.me/681930875?text=I%20am%20interested%20in%20your%20car%20for%20sale!",
+    color: "#25D366",
+  },
+];
+
+export const contactInfo = [
+  {
+    icon: MapPin,
+    title: "Our Location",
+    content: "Avenue Mohammed V, Marrakech, Morocco",
+    cta: "Get Directions",
+    link: "https://maps.app.goo.gl/68mNMmjRSjdb96Ca9",
+  },
+  {
+    icon: Phone,
+    title: "Phone Number",
+    content: "+212 681930875",
+    cta: "Call Us",
+    link: "tel:+212681930875",
+  },
+  {
+    icon: Mail,
+    title: "Email Address",
+    content: "isolationconfortfroid@gmail.com",
+    cta: "Send Email",
+    link: "mailto:mzilinassim@gmail.com",
+  },
+  {
+    icon: Clock,
+    title: "Working Hours",
+    content: "Monday - Friday: 9AM - 6PM",
+    cta: "See Full Schedule",
+    link: "/libritech/Working-Hours",
+  },
+];
+
+export const services = [
+  {
+    icon: Thermometer,
+    title: "Isolation Thermique",
+    description:
+      "Solutions d'isolation performantes pour optimiser le confort thermique et réduire les coûts énergétiques de vos bâtiments.",
+    features: [
+      "Isolation des murs et toitures",
+      "Matériaux haute performance",
+      "Audit énergétique inclus",
+      "Garantie 10 ans",
+    ],
+  },
+  {
+    icon: Snowflake,
+    title: "Froid Industriel",
+    description:
+      "Installation et maintenance de systèmes frigorifiques industriels pour la conservation et le stockage de vos produits.",
+    features: [
+      "Chambres froides sur mesure",
+      "Systèmes de réfrigération",
+      "Maintenance préventive",
+      "Conformité aux normes",
+    ],
+  },
+  {
+    icon: Wind,
+    title: "Climatisation",
+    description:
+      "Systèmes de climatisation et ventilation pour assurer un confort optimal dans tous vos espaces professionnels.",
+    features: [
+      "Climatisation centralisée",
+      "Systèmes multi-split",
+      "Ventilation double flux",
+      "Contrôle intelligent",
+    ],
+  },
+  {
+    icon: Shield,
+    title: "Maintenance Préventive",
+    description:
+      "Services de maintenance régulière pour garantir le bon fonctionnement et la longévité de vos installations.",
+    features: [
+      "Contrats de maintenance",
+      "Interventions programmées",
+      "Dépannage d'urgence 24/7",
+      "Pièces de rechange garanties",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Installation & Réparation",
+    description:
+      "Installation professionnelle et réparation de tous types d'équipements thermiques et frigorifiques.",
+    features: [
+      "Installation clé en main",
+      "Mise en service complète",
+      "Formation utilisateurs",
+      "Support technique",
+    ],
+  },
+  {
+    icon: Clock,
+    title: "Service d'Urgence",
+    description:
+      "Intervention rapide 24h/24 et 7j/7 pour tous vos dépannages d'urgence en froid et climatisation.",
+    features: [
+      "Intervention sous 2h",
+      "Équipe disponible 24/7",
+      "Diagnostic gratuit",
+      "Devis immédiat",
+    ],
+  },
+];
+
+// Company information
+export const companyInfo = {
+  name: "Isolation Confort Et Froid 2",
+  address: "Avenue Mohammed V, Marrakech, Morocco",
+  phone: "+212 681930875",
+  email: "isolationconfortfroid@gmail.com",
+  hours: "Lun-Ven: 8h-18h | Sam: 9h-13h",
+};
+
+// Quick links for navigation
+export const quickLinks = [
+  { name: "Accueil", path: "/" },
+  { name: "Services", path: "/services" },
+  { name: "À Propos", path: "/about" },
+  { name: "Réalisations", path: "/projects" },
+  { name: "Témoignages", path: "/testimonials" },
+  { name: "Contact", path: "/contact" },
+];
+
+// Service categories
+export const servicesLinks = [
+  { name: "Isolation Thermique", path: "/services/isolation" },
+  { name: "Climatisation", path: "/services/climatisation" },
+  { name: "Réfrigération", path: "/services/refrigeration" },
+  { name: "Maintenance", path: "/services/maintenance" },
+  { name: "Devis Gratuit", path: "/contact" },
+];
