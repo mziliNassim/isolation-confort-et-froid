@@ -1,15 +1,24 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Thermometer, ArrowRight } from "lucide-react";
 
 import homeIntroVid30 from "../../assets/vid/Intro 30s.mp4";
 import homeIntroVid8 from "../../assets/vid/Intro8s.mp4";
 import { Link } from "react-router-dom";
+import Loading from "../UI/Loading";
 
 const Hero = () => {
+  const [loading, setLoading] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
   const videoSrc = isMobile ? homeIntroVid30 : homeIntroVid8;
+
+  // Set video source based on device type
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 250);
+  }, []);
 
   return (
     <div id="hero" className="relative w-full h-screen overflow-hidden">
@@ -98,6 +107,8 @@ const Hero = () => {
           </div>
         </div>
       )}
+
+      {loading && <Loading />}
 
       {/* Scroll Down Indicator */}
       <motion.div

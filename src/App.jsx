@@ -29,6 +29,7 @@ const App = () => {
   // Check language settings in localStorage
   useEffect(() => {
     try {
+      setLoading(true);
       const langue = localStorage.getItem("langue");
       dispatch(setLangue(langue !== null ? parseInt(langue, 10) : 0));
     } catch (error) {
@@ -49,7 +50,7 @@ const App = () => {
   return (
     <div className={theme}>
       <div className="min-h-screen transition-colors bg-white dark:bg-gray-900 duration-200">
-        {/* Alert */}
+        {/* Alert & Load */}
         <Toaster theme={theme} />
 
         {/* Components */}

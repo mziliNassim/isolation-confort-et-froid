@@ -39,30 +39,29 @@ export const languages = [
   },
 ];
 
-// Social media links
 export const socialLinks = [
   {
     icon: Facebook,
     name: "Facebook",
-    link: "https://www.facebook.com/mzilinassim/",
+    link: "https://www.facebook.com/isolation_confor_et_froid/",
     color: "#3b5998",
   },
   {
     icon: Instagram,
     name: "Instagram",
-    link: "https://instagram.com/nassim__dev",
+    link: "https://instagram.com/isolation_confor_et_froid",
     color: "#E1306C",
   },
   {
     icon: Mail,
     name: "mail",
-    link: "mailto:mzilinassim@gmail.com",
+    link: "mailto:isolation.froid@gmail.com",
     color: "#EA4335",
   },
   {
     icon: MessageCircleMore,
     name: "Whatsapp",
-    link: "https://wa.me/681930875?text=I%20am%20interested%20in%20your%20car%20for%20sale!",
+    link: "https://wa.me/681930875?text=Bonjour%20ICF%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services%20d'isolation%20thermique%20et%20frigorifique.%20Merci%20!",
     color: "#25D366",
   },
 ];
@@ -87,7 +86,7 @@ export const contactInfo = [
     title: "Email Address",
     content: "isolationconfortfroid@gmail.com",
     cta: "Send Email",
-    link: "mailto:mzilinassim@gmail.com",
+    link: "mailto:isolation.froid@gmail.com",
   },
   {
     icon: Clock,
@@ -180,17 +179,11 @@ export const companyInfo = {
   phone: "+212 681930875",
   email: "isolationconfortfroid@gmail.com",
   hours: "Lun-Ven: 8h-18h | Sam: 9h-13h",
+  logo: "/logo.jpg",
+  desc: "Passionate full-stack developer crafting digital experiences with modern technologies. Let's build something amazing together!",
+  email: "isolation.froid@gmail.com",
+  tele: "+212 681930875",
 };
-
-// Quick links for navigation
-export const quickLinks = [
-  { name: "Accueil", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "À Propos", path: "/about" },
-  { name: "Réalisations", path: "/projects" },
-  { name: "Témoignages", path: "/testimonials" },
-  { name: "Contact", path: "/contact" },
-];
 
 // Service categories
 export const servicesLinks = [
