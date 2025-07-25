@@ -68,7 +68,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="bg-gray-300 h-36 rounded-2xl relative overflow-hidden">
                 <img
-                  src="/images/3.jpg"
+                  src="/images/clima.png"
                   alt="Travaux de maintenance"
                   loading="lazy"
                   className="absolute inset-0 object-cover w-full h-full"
@@ -76,7 +76,7 @@ const Hero = () => {
               </div>
               <div className="bg-gray-300 h-36 rounded-2xl relative overflow-hidden">
                 <img
-                  src="/images/3.jpg"
+                  src="/images/clima outside.png"
                   alt="Équipe ICF"
                   loading="lazy"
                   className="absolute inset-0 object-cover w-full h-full"
