@@ -5,7 +5,8 @@ import { Clock, CheckCircle, ArrowRight, Phone, Star } from "lucide-react";
 
 import Breadcrumb from "../components/UI/Breadcrumb";
 import ServicesCard from "../components/services/ServicesCard";
-import { services } from "../utils/data";
+import { companyInfo, services } from "../utils/data";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -44,20 +45,21 @@ const Services = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.button
+            <Link
+              to="/contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-red-500 to-blue-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Demander un Devis
-            </motion.button>
+              Contactez-Nous
+            </Link>
 
             <div className="flex items-center space-x-3 text-gray-600">
               <div className="p-3 bg-gray-100 rounded-full">
                 <Phone size={20} />
               </div>
               <div className="text-left">
-                <div className="font-bold text-black">(+212) 0 661 345 379</div>
+                <div className="font-bold text-black">{companyInfo.tele}</div>
                 <div className="text-sm">Appelez-nous maintenant</div>
               </div>
             </div>
@@ -96,17 +98,14 @@ const Services = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <motion.button
+              <Link
+                to="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-black text-white font-semibold rounded-2xl hover:bg-gray-800 transition-colors"
               >
                 Contactez un Expert
-              </motion.button>
-
-              <button className="px-8 py-4 border-2 border-gray-300 text-black font-semibold rounded-2xl hover:border-red-500 hover:text-red-600 transition-colors">
-                Voir nos Réalisations
-              </button>
+              </Link>
             </div>
           </div>
         </motion.div>
