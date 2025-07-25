@@ -130,8 +130,7 @@ const NavigationBar = () => {
             </div>
 
             {/* CTA Button & Mobile Menu Button */}
-            <div className="flex items-center space-x-4">
-              {/* CTA Button - Hidden on mobile */}
+            <div className="hidden lg:hidden items-center space-x-4">
               <motion.div
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -141,11 +140,9 @@ const NavigationBar = () => {
                   onClick={() => handleNavClick("", "/auth/login")}
                   className="relative cursor-pointer px-6 py-3 font-semibold text-white rounded-2xl bg-gradient-to-r from-red-500 via-red-600 to-blue-600 hover:from-red-600 hover:via-red-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-2xl overflow-hidden group"
                 >
-                  {/* Shine effect */}
                   <span className="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                   <span className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12 bg-white/20 pointer-events-none" />
 
-                  {/* Text and animated icon */}
                   <span className="relative z-10 flex items-center gap-2">
                     <span>Découvrir</span>
                     <motion.span
@@ -161,8 +158,10 @@ const NavigationBar = () => {
                   </span>
                 </button>
               </motion.div>
+            </div>
 
-              {/* Mobile Menu Button */}
+            {/* Mobile Menu Button */}
+            <div className="flex lg:hidden items-center space-x-4">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 onClick={toggleMenu}
@@ -245,12 +244,13 @@ const NavigationBar = () => {
                     </button>
                   </motion.div>
                 ))}
+
                 {/* Mobile CTA */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navigation.length * 0.1 }}
-                  className="pt-6 border-t border-gray-200/30"
+                  className="hidden pt-6 border-t border-gray-200/30"
                 >
                   <button
                     onClick={() => {
