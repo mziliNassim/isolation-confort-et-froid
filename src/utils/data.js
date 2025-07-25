@@ -16,7 +16,7 @@ import { Thermometer, Snowflake } from "lucide-react";
 
 export const navigation = [
   { id: 1, title: "accueil", url: "/home" },
-  { id: 2, title: "à propos", url: "/about" },
+  // { id: 2, title: "à propos", url: "/about" },
   { id: 3, title: "nos services", url: "/services" },
   { id: 5, title: "Contact", url: "/contact" },
 ];
