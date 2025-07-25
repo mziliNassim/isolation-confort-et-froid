@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Thermometer, Shield, Home } from "lucide-react";
+import { companyInfo } from "../../utils/data";
+import { Link } from "react-router-dom";
 
 const Experts = () => {
   return (
@@ -176,13 +178,14 @@ const Experts = () => {
 
       {/* Bottom Contact Section - Single version across all screens */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-8 col-span-1 lg:col-span-2 border-t border-gray-200 dark:border-gray-700">
-        <motion.button
+        <Link
+          to="/contact"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-gradient-to-r from-red-500 to-blue-500 text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
         >
-          Demandez un Devis Gratuit
-        </motion.button>
+          Contactez-nous
+        </Link>
 
         <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-300">
           <div className="p-2 bg-gradient-to-br from-red-100 to-blue-100 dark:from-red-900/30 dark:to-blue-900/30 rounded-full">
@@ -190,7 +193,7 @@ const Experts = () => {
           </div>
           <div>
             <div className="font-bold text-gray-900 dark:text-gray-100">
-              (+212) 0 661 345 379
+              {companyInfo.tele}
             </div>
             <div className="text-sm">Dépannage climatisation 24h/24</div>
           </div>

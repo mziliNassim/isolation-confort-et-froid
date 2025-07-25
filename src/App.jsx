@@ -53,7 +53,7 @@ const App = () => {
     <div className={theme}>
       <div className="min-h-screen transition-colors bg-white dark:bg-gray-900 duration-200">
         {/* Alert & Load */}
-        <Toaster theme={theme} />
+        <Toaster richColors theme={theme} />
 
         {/* Components */}
         <NavigationBar />

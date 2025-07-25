@@ -8,9 +8,6 @@ import Hero from "../components/about/Hero";
 import Experts from "../components/about/Experts";
 
 const About = () => {
-  const heroRef = useRef(null);
-  const isHeroInView = useInView(heroRef, { once: true });
-
   return (
     <>
       <div className="min-h-screen pt-30 bg-white transition-colors duration-500 overflow-hidden">

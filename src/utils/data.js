@@ -5,12 +5,13 @@ import morocco from "../assets/img/languages/morocco.png";
 import { Instagram, Facebook, Wind, Shield } from "lucide-react";
 import { MapPin, Phone, Mail, Clock, Wrench } from "lucide-react";
 import { Thermometer, Snowflake, MessageCircleMore } from "lucide-react";
+import { color } from "motion";
 
 export const navigation = [
   { id: 1, title: "accueil", url: "/home" },
   { id: 2, title: "à propos", url: "/about" },
   // { id: 3, title: "nos services", url: "/services" },
-  // { id: 5, title: "Contact", url: "/contact" },
+  { id: 5, title: "Contact", url: "/contact" },
 ];
 
 export const languages = [
@@ -53,7 +54,7 @@ export const socialLinks = [
   {
     icon: MessageCircleMore,
     name: "Whatsapp",
-    link: "https://wa.me/681930875?text=Bonjour%20ICF%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services%20d'isolation%20thermique%20et%20frigorifique.%20Merci%20!",
+    link: "https://wa.me/777386032?text=Bonjour%20ICF%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services%20d'isolation%20thermique%20et%20frigorifique.%20Merci%20!",
     color: "#25D366",
   },
 ];
@@ -64,14 +65,16 @@ export const contactInfo = [
     title: "Our Location",
     content: "Avenue Mohammed V, Marrakech, Morocco",
     cta: "Get Directions",
-    link: "https://maps.app.goo.gl/68mNMmjRSjdb96Ca9",
+    link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13588.234688828752!2d-8.0324224!3d31.6322439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee9374acc0a5%3A0xd267411d65fc67d0!2sGare%20Oncf!5e0!3m2!1sfr!2sma!4v1753461470541!5m2!1sfr!2sma",
+    color: "#FF5733",
   },
   {
     icon: Phone,
     title: "Phone Number",
-    content: "+212 681930875",
+    content: "+212 777-386032",
     cta: "Call Us",
-    link: "tel:+212681930875",
+    link: "tel:+212777386032",
+    color: "#34b7f1",
   },
   {
     icon: Mail,
@@ -79,6 +82,7 @@ export const contactInfo = [
     content: "isolationconfortfroid@gmail.com",
     cta: "Send Email",
     link: "mailto:isolation.froid@gmail.com",
+    color: "#EA4335",
   },
   {
     icon: Clock,
@@ -86,6 +90,7 @@ export const contactInfo = [
     content: "Monday - Friday: 9AM - 6PM",
     cta: "See Full Schedule",
     link: "/libritech/Working-Hours",
+    color: "#28a745",
   },
 ];
 
@@ -168,13 +173,13 @@ export const services = [
 export const companyInfo = {
   name: "Isolation Confort Et Froid 2",
   address: "Avenue Mohammed V, Marrakech, Morocco",
-  phone: "+212 681930875",
+  phone: "+212 777-386032",
   email: "isolationconfortfroid@gmail.com",
   hours: "Lun-Ven: 8h-18h | Sam: 9h-13h",
   logo: "/logo.jpg",
   desc: "Passionate full-stack developer crafting digital experiences with modern technologies. Let's build something amazing together!",
   email: "isolation.froid@gmail.com",
-  tele: "+212 681930875",
+  tele: "+212 777-386032",
 };
 
 // Service categories
