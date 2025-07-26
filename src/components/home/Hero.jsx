@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Thermometer, ArrowRight } from "lucide-react";
 
-import homeIntroPoster from "../../assets/img/hero-poster.png";
-// import homeIntroVid8Web from "../../assets/vid/Intro8s.webm";
-import homeIntroVid8Web from "../../assets/vid/man-clima.mp4";
-// import homeIntroVid8Web from "../../assets/vid/wom-clima.mp4";
+import homeIntroPoster from "../../assets/img/poster3.png";
+
+import homeIntroVid8Web from "../../assets/vid/man-clima.webm";
 
 const Hero = ({}) => {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -43,7 +42,7 @@ const Hero = ({}) => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 bg-transparent flex items-center justify-center w-full h-full">
+      <div className="relative z-40 bg-transparent flex items-center justify-center w-full h-full">
         <div className="container w-fit px-4 mx-auto text-center bg-transparent  backdrop-blur-xl py-10 rounded-xl shadow-lg shadow-black/20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
