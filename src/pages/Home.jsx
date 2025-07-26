@@ -9,12 +9,13 @@ const Home = () => {
   return (
     <>
       <div className="mb-10">
+        {/* Hero with video intro */}
         <Hero />
 
-        <div className="w-full md:w-10/12 mx-auto">
+        <div className="w-full mx-auto">
           <Services />
-          {/* <Avantages /> */}
-          {/* <CTA /> */}
+          <Avantages />
+          <CTA />
         </div>
       </div>
     </>

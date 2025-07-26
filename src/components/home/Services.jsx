@@ -11,7 +11,10 @@ const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   return (
-    <section id="services" className="py-20 bg-white dark:bg-gray-900">
+    <section
+      id="services"
+      className="w-full md:w-10/12 mx-auto py-20 bg-white dark:bg-gray-900"
+    >
       <div className="container mx-auto px-4">
         <AnimatedSection className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-red-100 dark:bg-red-900/30 text-[#f35a57]">

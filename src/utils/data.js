@@ -62,34 +62,34 @@ export const socialLinks = [
 export const contactInfo = [
   {
     icon: MapPin,
-    title: "Our Location",
-    content: "Avenue Mohammed V, Marrakech, Morocco",
-    cta: "Get Directions",
-    link: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13588.234688828752!2d-8.0324224!3d31.6322439!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee9374acc0a5%3A0xd267411d65fc67d0!2sGare%20Oncf!5e0!3m2!1sfr!2sma!4v1753461470541!5m2!1sfr!2sma",
+    title: "Notre Adresse",
+    content: "Avenue Mohammed V, Marrakech, Maroc",
+    cta: "Obtenir l'itinéraire",
+    link: "https://www.google.com/maps/place/Gare+Oncf/@31.62967,-8.017888,14z/data=!4m6!3m5!1s0xdafee9374acc0a5:0xd267411d65fc67d0!8m2!3d31.62967!4d-8.017888!16s%2Fg%2F11gfcz4y30?hl=fr&entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D",
     color: "#FF5733",
   },
   {
     icon: Phone,
-    title: "Phone Number",
+    title: "Numéro de téléphone",
     content: "+212 777-386032",
-    cta: "Call Us",
+    cta: "Appelez-nous",
     link: "tel:+212777386032",
     color: "#34b7f1",
   },
   {
     icon: Mail,
-    title: "Email Address",
-    content: "isolationconfortfroid@gmail.com",
-    cta: "Send Email",
+    title: "Adresse e-mail",
+    content: "isolation.froid@gmail.com",
+    cta: "Envoyer un e-mail",
     link: "mailto:isolation.froid@gmail.com",
     color: "#EA4335",
   },
   {
     icon: Clock,
-    title: "Working Hours",
-    content: "Monday - Friday: 9AM - 6PM",
-    cta: "See Full Schedule",
-    link: "/libritech/Working-Hours",
+    title: "Horaires d'ouverture",
+    content: "Lundi - Vendredi : 9h00 - 18h00",
+    cta: "Voir les horaires complets",
+    link: "",
     color: "#28a745",
   },
 ];
@@ -173,13 +173,33 @@ export const services = [
 export const companyInfo = {
   name: "Isolation Confort Et Froid 2",
   address: "Avenue Mohammed V, Marrakech, Morocco",
-  phone: "+212 777-386032",
+  phone: "+212777386032",
+  whatsapp:
+    "https://wa.me/777386032?text=Bonjour%20ICF%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20services%20d'isolation%20thermique%20et%20frigorifique.%20Merci%20!",
   email: "isolationconfortfroid@gmail.com",
   hours: "Lun-Ven: 8h-18h | Sam: 9h-13h",
   logo: "/logo.jpg",
-  desc: "Passionate full-stack developer crafting digital experiences with modern technologies. Let's build something amazing together!",
+  desc: "Spécialiste en isolation thermique, climatisation et équipements thermiques & frigorifiques. Solutions professionnelles pour améliorer le confort et la performance énergétique de votre habitat.",
   email: "isolation.froid@gmail.com",
   tele: "+212 777-386032",
+  infos: {
+    projects: {
+      count: "200+",
+      desc: "projets réalisés",
+    },
+    clients: {
+      count: "100%",
+      desc: "Clients satisfaits",
+    },
+    experience: {
+      count: "10+",
+      desc: "Années d'expérience",
+    },
+    services: {
+      count: "24/7",
+      desc: "Service d'urgence",
+    },
+  },
 };
 
 // Service categories

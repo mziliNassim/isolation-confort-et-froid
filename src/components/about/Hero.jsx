@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { companyInfo } from "../../utils/data";
 
 const Hero = () => {
   return (
@@ -92,9 +93,11 @@ const Hero = () => {
               className="bg-gradient-to-r from-red-500 to-red-600 text-white p-6 rounded-2xl shadow-lg"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">879+</div>
-                <div className="text-sm font-medium opacity-90">
-                  Projets Réalisés
+                <div className="text-3xl font-bold mb-2">
+                  {companyInfo.infos.projects.count}
+                </div>
+                <div className="text-sm font-medium opacity-90 capitalize">
+                  {companyInfo.infos.projects.desc}
                 </div>
               </div>
             </motion.div>
@@ -104,9 +107,11 @@ const Hero = () => {
               className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">148+</div>
-                <div className="text-sm font-medium opacity-90">
-                  Clients Satisfaits
+                <div className="text-3xl font-bold mb-2">
+                  {companyInfo.infos.clients.count}
+                </div>
+                <div className="text-sm font-medium opacity-90 capitalize">
+                  {companyInfo.infos.clients.desc}
                 </div>
               </div>
             </motion.div>

@@ -53,8 +53,10 @@ const Services = () => {
             >
               Contactez-Nous
             </Link>
-
-            <div className="flex items-center space-x-3 text-gray-600">
+            <a
+              href={`tel:${companyInfo.phone}`}
+              className="flex items-center space-x-3 text-gray-600 shadow-lg px-3 py-2 rounded-2xl"
+            >
               <div className="p-3 bg-gray-100 rounded-full">
                 <Phone size={20} />
               </div>
@@ -62,7 +64,7 @@ const Services = () => {
                 <div className="font-bold text-black">{companyInfo.tele}</div>
                 <div className="text-sm">Appelez-nous maintenant</div>
               </div>
-            </div>
+            </a>
           </div>
         </motion.div>
 

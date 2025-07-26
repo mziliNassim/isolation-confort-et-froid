@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Thermometer, ArrowRight } from "lucide-react";
 
-import homeIntroVid30 from "../../assets/vid/Intro 30s.mp4";
-import homeIntroVid8 from "../../assets/vid/Intro8s.mp4";
-import { Link } from "react-router-dom";
-import Loading from "../UI/Loading";
+import homeIntroPoster from "../../assets/img/hero-poster.png";
+// import homeIntroVid8Web from "../../assets/vid/Intro8s.webm";
+import homeIntroVid8Web from "../../assets/vid/man-clima.mp4";
+// import homeIntroVid8Web from "../../assets/vid/wom-clima.mp4";
 
-const Hero = () => {
-  const [loading, setLoading] = useState(true);
+const Hero = ({}) => {
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
-  const videoSrc = isMobile ? homeIntroVid30 : homeIntroVid8;
-
-  // Set video source based on device type
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 250);
-  }, []);
 
   return (
     <div id="hero" className="relative w-full h-screen overflow-hidden">
+      {/* show poster if videoLoaded === false*/}
+      {!videoLoaded && (
+        <div className="absolute inset-0 z-30 flex items-center justify-center bg-white">
+          <img
+            src={homeIntroPoster}
+            alt="Hero Poster"
+            className="object-cover w-full h-full"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       {/* Video Background */}
       <div className="absolute inset-0 z-0 bg-white">
         <video
@@ -31,84 +34,76 @@ const Hero = () => {
           playsInline
           onCanPlayThrough={() => setVideoLoaded(true)}
           onError={() => setVideoLoaded(false)}
-          className={`object-cover w-full h-full transition-opacity duration-1000 ${
-            videoLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-cover w-full h-full transition-opacity duration-1000 opacity-100`}
         >
-          <source src={videoSrc} type="video/mp4" />
+          <source src={homeIntroVid8Web} type="video/mp4" />
         </video>
 
-        {/* Optional dark overlay */}
-        <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+        {/* <div className="absolute inset-0 bg-black/40 pointer-events-none"></div> */}
       </div>
 
       {/* Hero Content */}
-      {(isMobile || !videoLoaded) && (
-        <div className="relative z-10 flex items-center justify-center w-full h-full">
-          <div className="container w-fit px-4 mx-auto text-center bg-transparent  backdrop-blur-xl py-10 rounded-xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
-            >
-              <Thermometer size={16} className="text-[#f35a57]" />
-              <span className="text-white font-medium">
-                Solutions de confort thermique
-              </span>
-            </motion.div>
+      <div className="relative z-10 bg-transparent flex items-center justify-center w-full h-full">
+        <div className="container w-fit px-4 mx-auto text-center bg-transparent  backdrop-blur-xl py-10 rounded-xl shadow-lg shadow-black/20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+          >
+            <Thermometer size={16} className="text-[#f35a57]" />
+            <span className="text-white font-medium">
+              Solutions de confort thermique
+            </span>
+          </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
-            >
-              Experts en{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[red] to-[blue]">
-                isolation thermique
-              </span>{" "}
-              et solutions de froid
-            </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
+          >
+            Experts en{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[red] to-[blue]">
+              isolation thermique
+            </span>{" "}
+            et solutions de froid
+          </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-              className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto"
-            >
-              Améliorez votre confort toute l'année avec nos solutions sur
-              mesure
-            </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto"
+          >
+            Améliorez votre confort toute l'année avec nos solutions sur mesure
+          </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.1 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <Link
+              to="/contact"
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-[red] to-[blue] text-white font-medium hover:shadow-lg hover:shadow-[#f35a57]/30 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
-              <Link
-                to="/contact"
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-[red] to-[blue] text-white font-medium hover:shadow-lg hover:shadow-[#f35a57]/30 transition-all duration-300 flex items-center justify-center gap-2 group"
-              >
-                Contacter-nous
-                <ArrowRight
-                  size={18}
-                  className="group-hover:translate-x-1 transition-transform duration-300"
-                />
-              </Link>
-              <Link
-                to="/services"
-                className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md border border-white text-white font-medium hover:bg-white/20 transition-all duration-300"
-              >
-                Découvrir nos services
-              </Link>
-            </motion.div>
-          </div>
+              Contacter-nous
+              <ArrowRight
+                size={18}
+                className="group-hover:translate-x-1 transition-transform duration-300"
+              />
+            </Link>
+            <Link
+              to="/services"
+              className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md border border-white text-white font-medium hover:bg-white/20 transition-all duration-300"
+            >
+              Découvrir nos services
+            </Link>
+          </motion.div>
         </div>
-      )}
-
-      {loading && <Loading />}
+      </div>
 
       {/* Scroll Down Indicator */}
       <motion.div

@@ -142,7 +142,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={link.url}
-                        className="flex items-center space-x-2 group hover:text-red-600 transition"
+                        className="flex items-center capitalize space-x-2 group hover:text-red-600 transition"
                       >
                         <span className="w-2 h-2 bg-gradient-to-r from-red-500 to-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition" />
                         <span>{link.title}</span>
