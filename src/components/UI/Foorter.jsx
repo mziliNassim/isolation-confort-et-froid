@@ -59,13 +59,13 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
           <div className="w-full flex flex-col md:flex-row justify-between gap-12 mb-16">
             {/* Logo & Info */}
-            <div className="space-y-6 w-full md:max-w-md">
+            <div className="space-y-6 w-full md:max-w-md flex flex-col items-center md:items-start">
               <div className="space-y-4">
                 <motion.a
                   href="/"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center space-x-3 cursor-pointer"
+                  className="flex items-center justify-center md:justify-start space-x-3 cursor-pointer"
                 >
                   <div className="relative group">
                     <div className="w-10 h-10 bg-gradient-to-br from-red-600 via-red-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg transition duration-300">
@@ -86,18 +86,18 @@ const Footer = () => {
                     </span>
                   </div>
                 </motion.a>
-                <p className="text-gray-700 text-base leading-relaxed">
+                <p className="text-gray-700 text-base text-center md:text-left leading-relaxed">
                   {companyInfo.desc}
                 </p>
               </div>
 
               {/* Contact Info */}
               <div className="space-y-3 text-gray-700 text-sm">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2">
                   <MapPin className="w-4 h-4 text-red-500" />
                   <span>{companyInfo?.address}</span>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2">
                   <Mail className="w-4 h-4 text-blue-500" />
                   <a
                     href={`mailto:${companyInfo?.email}`}
@@ -106,7 +106,7 @@ const Footer = () => {
                     {companyInfo?.email}
                   </a>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2">
                   <Phone className="w-4 h-4 text-green-500" />
                   <span>{companyInfo?.tele}</span>
                 </div>
@@ -131,11 +131,11 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="w-full md:max-w-sm">
-              <h4 className="text-xl font-bold text-black flex items-center space-x-2 mb-6">
+              <h4 className="text-xl font-bold text-black flex items-center justify-center space-x-2 mb-6">
                 <Rocket className="w-5 h-5 text-red-500" />
                 <span>Quick Links</span>
               </h4>
-              <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-gray-600 flex flex-col items-center">
                 {location.pathname !== "/projects" &&
                   location.pathname !== "/links" &&
                   navigation.map((link, index) => (
