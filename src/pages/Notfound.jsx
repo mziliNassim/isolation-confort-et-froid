@@ -61,7 +61,7 @@ const Notfound = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             onClick={handleHome}
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-500 hover:to-red-400 transition-all duration-200 shadow-lg hover:scale-105 hover:shadow-red-500/30"
+            className="flex items-center cursor-pointer gap-2 px-6 py-3 bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-500 hover:to-red-400 transition-all duration-200 shadow-lg hover:scale-105 hover:shadow-red-500/30"
           >
             <Home size={20} />
             Retour à l'accueil
@@ -69,7 +69,7 @@ const Notfound = () => {
 
           <button
             onClick={handleRefresh}
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-500 hover:to-blue-400 transition-all duration-200 shadow-lg hover:scale-105 hover:shadow-blue-500/30"
+            className="flex items-center cursor-pointer gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-500 hover:to-blue-400 transition-all duration-200 shadow-lg hover:scale-105 hover:shadow-blue-500/30"
           >
             <RefreshCw size={20} />
             Réessayer
@@ -77,7 +77,7 @@ const Notfound = () => {
 
           <button
             onClick={() => window.history.back()}
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-600 text-white font-semibold rounded-lg hover:from-gray-600 hover:to-gray-500 transition-all duration-200 shadow-lg border border-gray-500/30 hover:scale-105 hover:shadow-gray-500/30"
+            className="flex items-center cursor-pointer gap-2 px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-600 text-white font-semibold rounded-lg hover:from-gray-600 hover:to-gray-500 transition-all duration-200 shadow-lg border border-gray-500/30 hover:scale-105 hover:shadow-gray-500/30"
           >
             <ArrowLeft size={20} />
             Retour
