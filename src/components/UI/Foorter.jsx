@@ -81,7 +81,7 @@ const Footer = () => {
                     <span className="text-xl font-bold bg-gradient-to-r from-red-600 via-blue-600 to-red-600 bg-clip-text text-transparent">
                       ISOLATION
                     </span>
-                    <span className="text-xs text-gray-500 hidden sm:block">
+                    <span className="text-xs text-gray-500 block">
                       Confort & Froid
                     </span>
                   </div>
