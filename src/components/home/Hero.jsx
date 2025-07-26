@@ -62,11 +62,9 @@ const Hero = ({}) => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
           >
-            Experts en{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[red] to-[blue]">
-              isolation thermique
-            </span>{" "}
-            et solutions de froid
+              Experts en isolation thermique et solutions de froid
+            </span>
           </motion.h1>
 
           <motion.p

@@ -68,14 +68,14 @@ const Footer = () => {
                   className="flex items-center justify-center md:justify-start space-x-3 cursor-pointer"
                 >
                   <div className="relative group">
-                    <div className="w-10 h-10 bg-gradient-to-br from-red-600 via-red-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg transition duration-300">
+                    <div className="w-10 h-10 bg-gradient-to-br from-red-600  to-blue-600 rounded-full flex items-center justify-center shadow-lg transition duration-300">
                       <img
                         src="/logo.jpg"
                         alt="Logo"
                         className="w-9 h-9 object-cover rounded-full"
                       />
                     </div>
-                    <div className="absolute -inset-2 bg-gradient-to-br from-red-600/30 via-red-500/30 to-blue-600/30 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition" />
+                    <div className="absolute -inset-2 bg-gradient-to-br from-red-600/30 to-blue-600/30 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xl font-bold bg-gradient-to-r from-red-600 via-blue-600 to-red-600 bg-clip-text text-transparent">
